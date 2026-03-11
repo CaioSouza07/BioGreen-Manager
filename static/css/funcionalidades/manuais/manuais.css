@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    /* display: flex; */
+}
+#container{
+    /* border: 3px red solid; */
+    min-height: 100vh;
+}
+#header{
+    background-image: linear-gradient(to left, #108649, #89C355);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header img{
+    height: 60px;
+    margin: 5px 10px;
+}
+
+#menu-burger{
+    height: 50px !important;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: red 2px solid; */
+    text-align: center;
+    margin: 30px;
+    align-items: center;
+}
+
+#content h2{
+    color: #108649;
+    font-size: 2.1em;
+    font-weight:550;
+    margin: 0 15vw;
+}
+
+#conteudo-manuais{
+    /* border: 2px solid green; */
+    width: 100%;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#conteudo-manuais .manual-pdf{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0, 20%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    box-shadow: 2px 2px 4px gray;
+}
+
+#conteudo-manuais .manual-pdf .linha-div-pdf{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0, 20%);
+    border-radius: 20px;
+    height: 1px;
+}
+
+#conteudo-manuais div img{
+    width: 60%;
+    align-self: center;
+    margin: 10px 10px 0 10px;
+}
+
+#conteudo-manuais div p{
+    align-self: flex-start;
+    margin: 10px;
+    color:#8F8F8F;
+}
+
+#conteudo-manuais div .titulo-pdf{
+    color:black !important;
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+
+
+
+
+#menu-inferior{
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(to left, #108649, #89C355);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+#menu-inferior a{
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-inferior a img{
+    width: 50%;
+    margin: 10px;
+    opacity: 0.6;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    /* display: flex; */
+}
+#container{
+    /* border: 3px red solid; */
+    min-height: 100vh;
+}
+#header{
+    background-image: linear-gradient(to left, #108649, #89C355);
+    display: flex;
+}
+#header img{
+    height: 60px;
+    margin: 5px 10px;
+}
+#card-login{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px gray;
+}
+
+#card-login h1{
+    color: #108649;
+    font-size: 2.5em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 20px;
+}
+
+form input{
+    height: 45px;
+    border: 1px solid #8F8F8F;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.6em;
+}
+
+input::placeholder{
+    color: #8F8F8F;
+}
+
+/* form button{
+    margin: 0px 70px;
+    background-image: linear-gradient(to right, #89C355, #108649);
+    border: none;
+    color: white;
+    font-size: 1.9em;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px grey;
+} */
+#btn-entrar{
+    margin: 0px 70px;
+    background-image: linear-gradient(to right, #89C355, #108649);
+    border: none;
+    color: white;
+    font-size: 1.9em;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px grey;
+    text-decoration: none;
+}
+
+#link-esqueceu-senha{
+    text-decoration: none;
+    color: #8F8F8F;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+#link-cadastro{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+#link-cadastro p{
+    color: #8F8F8F;
+}
+
+#link-cadastro a{
+    color: #108649;
+    margin-left: 3px;
+}

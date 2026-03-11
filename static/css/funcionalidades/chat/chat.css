@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    /* display: flex; */
+}
+#container{
+    /* border: 3px red solid; */
+    min-height: 100vh;
+}
+#header{
+    background-image: linear-gradient(to left, #108649, #89C355);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header img{
+    height: 60px;
+    margin: 5px 10px;
+}
+
+#menu-burger{
+    height: 50px !important;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* border: red 2px solid; */
+    text-align: center;
+    margin: 15px;
+    align-items: center;
+    height: calc(100vh - 160px);
+    /* border: 2px solid red; */
+}
+
+#status-chat{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+#status-chat div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#status-chat #titulo{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#circle{
+    background-color: #108649;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.linha-div{
+    height: 1px;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 25%);
+    /* margin: 15px 0; */
+}
+
+#conteudo-chat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+    flex: 1;
+    gap: 10px;
+    margin: 15px 0 0 0;
+    /* border: 2px solid green; */
+}
+
+.chat-atendente{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+        "img-atendente nome-atendente"
+        "img-atendente msg-atendente";
+    /* border: 2px red solid; */
+}
+
+
+
+.img-atendente img{
+    width: 100%;
+    /* border: 1px solid yellowgreen; */
+    margin: 0;
+}
+
+.img-atendente{
+    grid-area: img-atendente;
+    /* border: 2px red solid; */
+}
+
+.nome-atendente{
+    grid-area: nome-atendente;
+    /* border: 2px solid blue; */
+    text-align: left;
+}
+
+.msg-atendente{
+    grid-area: msg-atendente;
+    /* border: 2px solid yellow; */
+    margin: 5px;
+    border-radius: 0 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    background-color: #c1dfa3;
+    padding: 5px;
+    font-size: 1.2em;
+    word-break: break-word;
+    width: 80%;
+}
+
+#enviar-msg{
+    width: 100%;
+    /* border-top: 1px solid rgba(0,0,0,0.2); */
+    /* border: 1px red solid; */
+    background: white;
+
+}
+
+#mensagem{
+    border: 2px solid rgb(0, 0, 0, 25%);
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    padding: 5px;
+    width: 85%;
+    justify-content: space-between;
+}
+
+#mensagem button{
+    border: none;
+    background-color: white;
+}
+
+#mensagem input{
+    background-color: white;
+    border: none;
+    width: 90%;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+
+#mensagem input:focus{
+    border: none;
+    outline: none;
+}
+
+#mensagem img{
+    width: 25px;
+}
+
+#envio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-enviar-msg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #89C355;
+    border: none;
+    box-shadow: 1px 1px 4px gray;
+}
+
+#btn-enviar-msg img{
+    width: 30px;
+}
+
+#menu-inferior{
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(to left, #108649, #89C355);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+#menu-inferior a{
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-inferior a img{
+    width: 50%;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+#btn-chat img{
+    opacity: 1 !important;
+    /* box-shadow: 0px 0px 4px gray; */
+    filter: drop-shadow(0px 2px 4px gray);
+}

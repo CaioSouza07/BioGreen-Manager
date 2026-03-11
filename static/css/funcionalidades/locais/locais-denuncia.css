@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    /* display: flex; */
+}
+#container{
+    /* border: 3px red solid; */
+    min-height: 100vh;
+}
+#header{
+    background-image: linear-gradient(to left, #108649, #89C355);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header img{
+    height: 60px;
+    margin: 5px 10px;
+}
+
+#menu-burger{
+    height: 50px !important;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: red 2px solid; */
+    text-align: center;
+    margin: 30px;
+    align-items: center;
+}
+
+#content h2{
+    color: #108649;
+    font-size: 2.1em;
+    font-weight:550;
+    margin: 0 15vw;
+}
+
+#mapa-locais{
+    height: 300px;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 25%);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px gray;
+    /* width: 300px; */
+    /* border: 1px red solid; */
+}
+
+
+#menu-inferior{
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(to left, #108649, #89C355);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+#menu-inferior a{
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-inferior a img{
+    width: 50%;
+    margin: 10px;
+    opacity: 0.6;
+}

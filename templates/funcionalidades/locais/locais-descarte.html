@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../static/css/funcionalidades/locais/locais-descarte.css">
+    <link rel="shortcut icon" href="../../../static/images/MiniLogo-Maior.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <title>BioGreen Manager</title>
+</head>
+<body>
+    <div id="container"> 
+        <div id="header">
+            <img id="logo-biogreen" src="../../../static/images/MiniLogo-Maior.png" alt="Logo da BioGreen">
+            <img id="menu-burger" src="../../../static/images/menu-burger.png" alt="Menu-Burger">
+        </div>
+
+        <div id="content">
+           <h2>Locais de Descarte</h2>
+            <div id="mapa-locais"></div>
+            <div id="card-locais">
+                <h3>Locais</h3>
+                <div class="local">
+                    <div class="cabecalho-local">
+                        <h4>Ponto de Coleta - Central</h4>
+                        <button>
+                            <img src="/static/images/seta.png" alt="">
+                        </button>
+                    </div>
+                    <div class="linha-div-local"></div>
+                    <div class="tipos-residuos">
+                        <span>
+                            <img src="/static/images/oleo-icon.png" alt="">
+                            <p>Óleo</p>
+                        </span>
+                        <span>
+                            <img src="/static/images/eletro-icon.png" alt="">
+                            <p>Eletrônicos</p>
+                        </span>
+                        <span>
+                            <img src="/static/images/movel-icon.png" alt="">
+                            <p>Móveis</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div id="menu-inferior">
+            <a href="/templates/funcionalidades/chat/chat.html" id="btn-chat">
+                <img src="/static/images/btn-chat.png" alt="">
+            </a>
+            <a href="/templates/funcionalidades/solicitacoes/index.html" id="btn-solicitacoes">
+                <img src="/static/images/btn-solicitacoes.png" alt="">
+            </a>
+            <a href="/templates/home.html" id="btn-home">
+                <img src="/static/images/btn-home.png" alt="">
+            </a>
+            <a href="/templates/funcionalidades/noticias/noticias.html" id="btn-noticias">
+                <img src="/static/images/btn-noticias.png" alt="">
+            </a>
+            <a href="/templates/funcionalidades/notificacoes/notificacoes.html" id="btn-notificacoes">
+                <img src="/static/images/btn-notificacoes.png" alt="">
+            </a>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin="">
+    </script>
+    <script src="/static/js/funcionalidades/locais/locais-descarte.js"></script>
+    
+</body>
+</html>
