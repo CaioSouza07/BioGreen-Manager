@@ -11,26 +11,29 @@ body {
     min-height: 100vh;
     /* display: flex; */
 }
-#container{
+
+#container {
     /* border: 3px red solid; */
     min-height: 100vh;
 }
-#header{
+
+#header {
     background-image: linear-gradient(to left, #108649, #89C355);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#header img{
+
+#header img {
     height: 60px;
     margin: 5px 10px;
 }
 
-#menu-burger{
+#menu-burger {
     height: 50px !important;
 }
 
-#content{
+#content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,14 +43,14 @@ body {
     align-items: center;
 }
 
-#content h2{
+#content h2 {
     color: #108649;
     font-size: 2.1em;
-    font-weight:550;
+    font-weight: 550;
     margin: 0 15vw;
 }
 
-#img-denunciar{
+#img-denunciar {
     background-image: linear-gradient(to bottom right, #048340, #0C6932);
     border: 1px solid #0C6932;
     border-radius: 50%;
@@ -57,11 +60,11 @@ body {
     padding: 20px;
 }
 
-#img-denunciar img{
+#img-denunciar img {
     max-width: 100%;
 }
 
-#card-denunciar{
+#card-denunciar {
     display: flex;
     /* align-items: center; */
     background-color: white;
@@ -69,7 +72,7 @@ body {
     border-radius: 20px;
     padding: 20px;
     gap: 10px;
-    box-shadow: 2px 2px 4px gray; 
+    box-shadow: 2px 2px 4px gray;
     width: 100%;
     text-align: left;
     color: #108649;
@@ -77,13 +80,13 @@ body {
     flex-direction: column;
 }
 
-#card-linha{
+#card-linha {
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 5px;
 }
 
-#card-denunciar input{
+#card-denunciar input {
     width: 100%;
     font-size: 1em;
     padding: 10px;
@@ -91,19 +94,19 @@ body {
     border-radius: 15px;
 }
 
-#card-denunciar button{
+#card-denunciar button {
     background-color: white;
     border: 1px solid #8F8F8F;
     border-radius: 15px;
     padding: 10px;
 }
 
-#card-denunciar button img{
+#card-denunciar button img {
     width: 18%;
-    
+
 }
 
-#btn-denunciar{
+#btn-denunciar {
     margin: 0px 25%;
     background-image: linear-gradient(to right, #89C355, #108649);
     border: none;
@@ -117,7 +120,9 @@ body {
     text-align: center;
 }
 
-#menu-inferior{
+
+
+#menu-inferior {
     position: fixed;
     bottom: 0;
     background-image: linear-gradient(to left, #108649, #89C355);
@@ -127,20 +132,20 @@ body {
 
 }
 
-#menu-inferior a{
+#menu-inferior a {
     /* border: 2px red solid; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#menu-inferior a img{
+#menu-inferior a img {
     width: 50%;
     margin: 10px;
     opacity: 0.6;
 }
 
-#btn-solicitacoes img{
+#btn-solicitacoes img {
     opacity: 1 !important;
     /* box-shadow: 0px 0px 4px gray; */
     filter: drop-shadow(0px 2px 4px gray);
