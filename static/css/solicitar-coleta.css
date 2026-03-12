@@ -102,6 +102,11 @@ body {
     
 }
 
+#add-img{
+    border: 1px solid red !important;
+    display: none;
+}
+
 #btn-solicitar{
     margin: 0px 25%;
     background-image: linear-gradient(to right, #89C355, #108649);
