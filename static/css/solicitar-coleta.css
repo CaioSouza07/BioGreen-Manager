@@ -92,7 +92,7 @@ body {
 
 #card-solicitar button{
     background-color: white;
-    border: 1px solid #8F8F8F;
+    border: 3px dashed #8F8F8F;
     border-radius: 15px;
     padding: 10px;
 }
