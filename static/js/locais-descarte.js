@@ -10,3 +10,5 @@ layer.addTo(mapa)
 
 const local1 = L.marker([-26.300249859681117,-48.85061839372728])
 local1.addTo(mapa)
+
+// mapa.setView([-26.318860311800716, -48.8563316280546], 16)

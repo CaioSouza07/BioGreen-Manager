@@ -76,11 +76,69 @@ body {
     box-shadow: 2px 2px 4px gray;
     border-radius: 20px;
     
-    height: 50px;
+    /* height: 50px; */
     margin: 10px 0;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+        "rua rua"
+        "data status";
+    gap: 15px;
 }
 
+.card-solicitacao p{
+    font-size: 1.1em;
+    color: #108649;
+    font-weight: 600;
+}
 
+.card-solicitacao span{
+    color: #8F8F8F;
+    grid-area: data;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.situacao-concluido{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+}
+
+.situacao-concluido div{
+    border: 2px solid #108649;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(16,134,73, 20%);
+    grid-area: status;
+}
+
+.situacao-pendente div{
+    border: 2px solid #8d0c0c;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(141,12,12, 20%);
+    grid-area: status;
+}
+
+.situacao-pendente p{
+    font-size: 1.1em;
+    color: #8d0c0c !important;
+    font-weight: 600;
+}
+
+.situacao-concluido div p{
+    font-weight: 500 !important;
+}
+
+#rua{
+    grid-area: rua;
+}
 
 
 #menu-inferior{

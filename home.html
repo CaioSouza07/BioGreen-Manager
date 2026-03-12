@@ -9,44 +9,54 @@
 </head>
 <body>
 
-    <!-- <nav class="menu-lateral">
+    <div id="escurecedor">
+
+    </div>
+
+    <nav class="menu-lateral" id="menu-burger-lateral">
         <div class="btn-expandir">
             <img src="/static/images/MiniLogo-Maior.png" alt="">
             <img id="btn-fechar" src="/static/images/fechar-menu.png" alt="">
         </div>
         <ul>
-           <li class="item-menu">
-                <a href="/templates/home.html">
-                    <span class="icon"></span>
-                    <span class="txt-link"></span>
+           <li class="item-menu" id="menu-home">
+                <a href="home.html">
+                    <span class="icon"><img src="/static/images/home-select.png" alt=""></span>
+                    <span class="txt-link">Home</span>
                 </a>
            </li> 
            <li class="item-menu">
-                <a href="/templates/home.html">
-                    <span class="icon"></span>
-                    <span class="txt-link"></span>
+                <a href="/solicitar-coleta.html">
+                    <span class="icon"><img src="/static/images/solicitar-coleta.png" alt=""></span>
+                    <span class="txt-link">Solicitar coleta</span>
                 </a>
            </li> 
            <li class="item-menu">
-                <a href="/templates/home.html">
-                    <span class="icon"></span>
-                    <span class="txt-link"></span>
+                <a href="/denunciar-descarte.html">
+                    <span class="icon"><img src="/static/images/denuncia.png" alt=""></span>
+                    <span class="txt-link">Denunciar descarte</span>
                 </a>
            </li> 
            <li class="item-menu">
-                <a href="/templates/home.html">
-                    <span class="icon"></span>
-                    <span class="txt-link"></span>
+                <a href="/locais-descarte.html">
+                    <span class="icon"><img src="/static/images/local-descarte.png" alt=""></span>
+                    <span class="txt-link">Consultar locais descarte</span>
                 </a>
            </li> 
            <li class="item-menu">
-                <a href="/templates/home.html">
-                    <span class="icon"></span>
-                    <span class="txt-link"></span>
+                <a href="/manuais.html">
+                    <span class="icon"><img src="/static/images/manuais.png" alt=""></span>
+                    <span class="txt-link">Consultar manuais</span>
                 </a>
            </li> 
+           <li>
+                <a href="/entrar.html">
+                    <span class="icon"><img src="/static/images/logout.png" alt=""></span>
+                    <span class="txt-link">Sair</span>
+                </a>
+           </li>
         </ul>
-    </nav> -->
+    </nav>
 
 
     <div id="container"> 
@@ -104,5 +114,6 @@
         </div>
         
     </div>
+    <script src="/static/js/home.js"></script>
 </body>
 </html>
